@@ -78,9 +78,9 @@ nx.draw(G, with_labels=True, font_weight="bold")
 plt.show()
 ```
 
-For example, in the above network, nodes 1, 2, and 4 have a degree of two. Node 3 has a degree of three. 
+For example, in the above network, nodes 1 and 2 have a degree of two, node 4 has a degree of one and node 3 has a degree of three. 
 
-For the $i^{th}$ node in a network, we'll denote its degree as $k_i$. Therefore, for the above network, $k_1$=$k_2$=$k_4$=2, $k_3$=3. 
+For the $i^{th}$ node in a network, we'll denote its degree as $k_i$. Therefore, for the above network, $k_1$=$k_2$=2, $k_4$=1, $k_3$=3. 
 
 As mentioned above, the **total number of links** is denoted as ***L***. In an undirected network, it is easy to understand that ***L*** should be half of the sum of all the node degrees. It should be halved because each link belongs to two nodes and therefore each is counted twice. We have:
 
@@ -92,7 +92,7 @@ In the above network, $L = 4$.
 
 ### Average degree
 
-**Average degree**, denoted as $\langle k \rangle$ is simply the mean of all the node degrees in a network. For the network above (Figure \@ref(fig:nunit2-nodes)), $\langle k \rangle = \frac{1}{4} \cdot (k_1 + k_2 + k_3 + k_4) = \frac{1}{4} \cdot (2+2+3+2) = 2.25$. This means that on average, each node in the network has 2.25 links. 
+**Average degree**, denoted as $\langle k \rangle$ is simply the mean of all the node degrees in a network. For the network above (Figure \@ref(fig:nunit2-nodes)), $\langle k \rangle = \frac{1}{4} \cdot (k_1 + k_2 + k_3 + k_4) = \frac{1}{4} \cdot (2+2+3+1) = 2$. This means that on average, each node in the network has 2 links. 
 
 According to its definition, we know that $\langle k \rangle$ = $\frac{1}{N} \sum_{i=1}^N k_i$. Combined with Eq. \@ref(eq:TotalLink), we have:
 
